@@ -171,6 +171,6 @@ G.add_edge("3", "4", weight=4)
 
 <div align="center">
 
-Made with 🧭 and Python
+Made with ❤️ by **Ankit Kumar Jha**
 
 </div>
