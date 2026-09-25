@@ -52,17 +52,29 @@ pip install networkx matplotlib pillow
 ```
 navigation-system/
 ├── Navigation_system.py     # Main application script
-├── project_img.png          # Background map image (required, same folder as script)
+├── campus_img.png            # Background map image (required, same folder as script)
 └── README.md                 # Project documentation
 ```
 
-> ⚠️ `project_img.png` must exist in the same directory as the script — it's used both as the GUI icon image and as the background for the route plot.
+> ⚠️ `campus_img.png` must exist in the same directory as the script — it's used both as the GUI icon image and as the background for the route plot.
 
 ---
 
 ## 🗺️ Data
 
-The "map" is hand-coded as a set of **50 nodes** (numbered `1`–`50`) connected by **weighted edges**, defined directly inside `plot_network_graph()`:
+<div align="center">
+
+### Campus Map — `campus_img.png`
+
+![Campus Map](https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/campus_img.png)
+
+*[View on GitHub](https://github.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/blob/main/campus_img.png)*
+
+</div>
+
+This is the background image used for the GUI and for plotting routes. Every node's `(x, y)` coordinate in `node_positions` is aligned to a real spot on this map.
+
+The "map" itself is hand-coded as a set of **50 nodes** (numbered `1`–`50`) connected by **weighted edges**, defined directly inside `plot_network_graph()`:
 
 ```python
 G.add_edge("1", "3", weight=4)
@@ -78,7 +90,7 @@ G.add_edge("3", "4", weight=4)
 ## 🚀 Installation
 
 1. **Clone or download** the project files.
-2. Place your map image in the project folder and name it `project_img.png`.
+2. Place your map image in the project folder and name it `campus_img.png`.
 3. Install dependencies:
    ```bash
    pip install networkx matplotlib pillow
