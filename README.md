@@ -51,9 +51,15 @@ pip install networkx matplotlib pillow
 
 ```
 navigation-system/
-├── Navigation_system.py     # Main application script
-├── campus_img.png            # Background map image (required, same folder as script)
+├── Navigation_system.py      # Main application script
+├── campus_img.png            # Background map image
+├── visualization-images/     # Screenshots used in the README
+│   ├── location of current and destination.png
+│   ├── route theory.png
+│   └── route visualization.png
+├──requirements.txt           # Required packages
 └── README.md                 # Project documentation
+
 ```
 
 > ⚠️ `campus_img.png` must exist in the same directory as the script — it's used both as the GUI icon image and as the background for the route plot.
@@ -123,22 +129,18 @@ G.add_edge("3", "4", weight=4)
 
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/visualization-images/location%20of%20current%20and%20destination.png" width="100%"><br>
+<img src="https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/visualization-images/location%20of%20current%20and%20destination.png" width="60%"><br>
 <sub><b>Location Input</b><br>Current location and destination are entered as node numbers, not place names — string-based location search is planned for a future version.</sub>
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/visualization-images/route%20theory.png" width="100%"><br>
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/visualization-images/route%20theory.png" width="60%"><br>
 <sub><b>Route Computation</b><br>Console output of the computed shortest path — the sequence of visited nodes and the total path length.</sub>
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/visualization-images/route%20visualization.png" width="100%"><br>
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/Ankit-Kumar-Jha-01/Navigation-System-for-CITK/main/visualization-images/route%20visualization.png" width="60%"><br>
 <sub><b>Route on Map</b><br>The shortest path rendered visually on the campus map, tracing the route from current location to destination.</sub>
-</td>
-</tr>
-</table>
 
 </div>
 
