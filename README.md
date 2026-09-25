@@ -50,7 +50,7 @@ pip install networkx matplotlib pillow
 ## 🗂️ Project Structure
 
 ```
-navigation-system/
+Navigation-System-for-CITK/
 ├── Navigation_system.py      # Main application script
 ├── campus_img.png            # Background map image
 ├── visualization-images/     # Screenshots used in the README
